@@ -68,7 +68,10 @@ export const CreateNoteModal = ({ isOpen, onClose }: CreateNoteModalProps) => {
       const processedFiles = await Promise.all(filePromises);
 
       // Call the media processing endpoint
-      const response = await fetch(ENDPOINTS.PROCESS_MEDIA, {
+      // `/api/proxy?url=${encodeURIComponent("https://ytshorts-grif.app.n8n.cloud/webhook/process-media")}`
+      // const response = await fetch(ENDPOINTS.PROCESS_MEDIA, {
+      const response = await fetch(`/api/proxy?url=${encodeURIComponent(ENDPOINTS.PROCESS_MEDIA)}`, {
+
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
