@@ -70,7 +70,7 @@ export const CreateNoteModal = ({ isOpen, onClose }: CreateNoteModalProps) => {
       // Call the media processing endpoint
       // `/api/proxy?url=${encodeURIComponent("https://ytshorts-grif.app.n8n.cloud/webhook/process-media")}`
       // const response = await fetch(ENDPOINTS.PROCESS_MEDIA, {
-      const response = await fetch(`/api/proxy?url=${encodeURIComponent("https://ytshorts-grif.app.n8n.cloud/webhook/POST/process-media")}`, {
+      const response = await fetch(`/api/proxy?url=${encodeURIComponent("https://ytshorts-grif.app.n8n.cloud/webhook/ba2f2bca-8d4b-4d9d-b7b2-8216fe2cffcb")}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
