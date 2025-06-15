@@ -139,7 +139,7 @@ const OralExam = () => {
       // Send to transcription endpoint
       // `/api/proxy?url=${encodeURIComponent("https://ytshorts-grif.app.n8n.cloud/webhook/process-media")}`
       // const response = await fetch(ENDPOINTS.TRANSCRIBE, {
-      const response = await fetch(`/api/proxy?url=${encodeURIComponent("https://ytshorts-grif.app.n8n.cloud/webhook/transcribe")}`, {
+      const response = await fetch(`/api/proxy?url=${encodeURIComponent("https://ytshorts-grif.app.n8n.cloud/webhook/POST/transcribe")}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -180,7 +180,7 @@ const OralExam = () => {
         setIsProcessing(true);
         // `/api/proxy?url=${encodeURIComponent("https://ytshorts-grif.app.n8n.cloud/webhook/process-media")}`
         // const response = await fetch(ENDPOINTS.EVALUATE_EXAM, {
-        const response = await fetch(`/api/proxy?url=${encodeURIComponent("https://ytshorts-grif.app.n8n.cloud/webhook/evaluate-exam")}`, {
+        const response = await fetch(`/api/proxy?url=${encodeURIComponent("https://ytshorts-grif.app.n8n.cloud/webhook/POST/evaluate-exam")}`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

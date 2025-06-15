@@ -45,7 +45,7 @@ const ExamSetup = () => {
     try {
       // `/api/proxy?url=${encodeURIComponent("https://ytshorts-grif.app.n8n.cloud/webhook/process-media")}`
       // const response = await fetch(ENDPOINTS.CREATE_EXAM {
-      const response = await fetch(`/api/proxy?url=${encodeURIComponent("https://ytshorts-grif.app.n8n.cloud/webhook/create-exam")}`, {
+      const response = await fetch(`/api/proxy?url=${encodeURIComponent("https://ytshorts-grif.app.n8n.cloud/webhook/POST/create-exam")}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
