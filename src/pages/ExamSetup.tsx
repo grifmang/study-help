@@ -44,8 +44,12 @@ const ExamSetup = () => {
     setIsLoading(true);
     try {
       // `/api/proxy?url=${encodeURIComponent("https://ytshorts-grif.app.n8n.cloud/webhook/process-media")}`
+      // https://ytshorts-grif.app.n8n.cloud/webhook/da88bea9-6f63-4bc2-973c-b68d499e3625
       // const response = await fetch(ENDPOINTS.CREATE_EXAM {
-      const response = await fetch(`/api/proxy?url=${encodeURIComponent("https://ytshorts-grif.app.n8n.cloud/webhook/da88bea9-6f63-4bc2-973c-b68d499e3625")}`, {
+      const n8nWebhook = 'https://ytshorts-grif.app.n8n.cloud/webhook/da88bea9-6f63-4bc2-973c-b68d499e3625';
+      const encoded = encodeURIComponent(n8nWebhook);
+  
+      const response = await fetch(`/api/proxy?url=${encoded}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
