@@ -189,7 +189,7 @@ const OralExam = () => {
         const encoded = encodeURIComponent(n8nWebhook);
     
         const response = await fetch(`/api/proxy?url=${encoded}`, {
-          method: 'POST',
+          method: 'GET',
           headers: {
             'Content-Type': 'application/json',
           },
